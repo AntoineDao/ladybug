@@ -27,7 +27,6 @@ jobs:
         - pip install python-semantic-release
         - semantic-release publish
         # generate updated documentation
-        - pip install Sphinx sphinxcontrib-fulltoc sphinx_bootstrap_theme
         - sphinx-apidoc -f -e -d 4 -o ./docs ./ladybug ./ladybug/euclid.py
         - sphinx-build -b html ./docs ./docs/_build/docs
       # deploy to github pages
