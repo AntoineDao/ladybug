@@ -10,8 +10,6 @@ install:
 
 script:
   - python -m pytest --cov=. tests/
-
-after_success:
   - coverage report
   - coveralls
 
