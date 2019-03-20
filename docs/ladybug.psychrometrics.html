@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ladybug.psychrometrics module &#8212; ladybug 1.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug.rootfind module" href="ladybug.rootfind.html" />
+    <link rel="prev" title="ladybug.location module" href="ladybug.location.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datatype.html">ladybug.datatype package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.angle.html">ladybug.datatype.angle module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.area.html">ladybug.datatype.area module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.base.html">ladybug.datatype.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.distance.html">ladybug.datatype.distance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energy.html">ladybug.datatype.energy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyflux.html">ladybug.datatype.energyflux module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.energyintensity.html">ladybug.datatype.energyintensity module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.fraction.html">ladybug.datatype.fraction module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.generic.html">ladybug.datatype.generic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.illuminance.html">ladybug.datatype.illuminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.luminance.html">ladybug.datatype.luminance module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.mass.html">ladybug.datatype.mass module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.massflowrate.html">ladybug.datatype.massflowrate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.power.html">ladybug.datatype.power module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.pressure.html">ladybug.datatype.pressure module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.rvalue.html">ladybug.datatype.rvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.specificenergy.html">ladybug.datatype.specificenergy module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.speed.html">ladybug.datatype.speed module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperature.html">ladybug.datatype.temperature module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturedelta.html">ladybug.datatype.temperaturedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.temperaturetime.html">ladybug.datatype.temperaturetime module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.thermalcondition.html">ladybug.datatype.thermalcondition module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.uvalue.html">ladybug.datatype.uvalue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volume.html">ladybug.datatype.volume module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="ladybug.datatype.volumeflowrate.html">ladybug.datatype.volumeflowrate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="ladybug.datatype.html#module-ladybug.datatype">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legendparameters.html">ladybug.legendparameters module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.listoperations.html">ladybug.listoperations module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legendparameters.html">ladybug.legendparameters module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.listoperations.html">ladybug.listoperations module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug.location.html" title="Previous Chapter: ladybug.location module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug.locat...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug.rootfind.html" title="Next Chapter: ladybug.rootfind module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug.rootf... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug.psychrometrics.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug.html">ladybug package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug.analysisperiod.html">ladybug.analysisperiod module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.color.html">ladybug.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollection.html">ladybug.datacollection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.datacollectionimmutable.html">ladybug.datacollectionimmutable module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.designday.html">ladybug.designday module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.dt.html">ladybug.dt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.epw.html">ladybug.epw module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.futil.html">ladybug.futil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.header.html">ladybug.header module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.legendparameters.html">ladybug.legendparameters module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.listoperations.html">ladybug.listoperations module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.location.html">ladybug.location module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.rootfind.html">ladybug.rootfind module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.skymodel.html">ladybug.skymodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.stat.html">ladybug.stat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.sunpath.html">ladybug.sunpath module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug.wea.html">ladybug.wea module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug.html#module-ladybug">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="module-ladybug.psychrometrics">
+<span id="ladybug-psychrometrics-module"></span><h1>ladybug.psychrometrics module<a class="headerlink" href="#module-ladybug.psychrometrics" title="Permalink to this headline">¶</a></h1>
+<p>Utility functions for converting between humidity metrics.</p>
+<dl class="function">
+<dt id="ladybug.psychrometrics.db_temp_from_enth_hr">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">db_temp_from_enth_hr</code><span class="sig-paren">(</span><em>enthalpy</em>, <em>humid_ratio</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#db_temp_from_enth_hr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.db_temp_from_enth_hr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dry Bulb Temperature (C) at Enthalpy enthalpy (kJ/kg) and
+humid_ratio (kg water/kg air).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug.psychrometrics.db_temp_from_wb_rh">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">db_temp_from_wb_rh</code><span class="sig-paren">(</span><em>wet_bulb</em>, <em>rel_humid</em>, <em>b_press=101325</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#db_temp_from_wb_rh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.db_temp_from_wb_rh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dry Bulb Temperature (C) and humidity_ratio at at wet_bulb (C),
+rel_humid (%) and Pressure b_press (Pa).</p>
+<p>Formula is only valid for rel_humid == 0 or rel_humid == 100.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug.psychrometrics.dew_point_from_db_enth">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">dew_point_from_db_enth</code><span class="sig-paren">(</span><em>db_temp</em>, <em>enthlpy</em>, <em>b_press=101325</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#dew_point_from_db_enth"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.dew_point_from_db_enth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dew Point Temperature (C) at Temperature db_temp (C), enthalpy (kJ/kg)
+and Pressure b_press (Pa).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug.psychrometrics.dew_point_from_db_hr">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">dew_point_from_db_hr</code><span class="sig-paren">(</span><em>db_temp</em>, <em>hr</em>, <em>b_press=101325</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#dew_point_from_db_hr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.dew_point_from_db_hr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dew Point Temperature (C) at Temperature db_temp (C),
+Humidity Ratio hr (kg water/kg air) and Pressure b_press (Pa).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug.psychrometrics.dew_point_from_db_rh">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">dew_point_from_db_rh</code><span class="sig-paren">(</span><em>db_temp</em>, <em>rh</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#dew_point_from_db_rh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.dew_point_from_db_rh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dew Point Temperature (C) at Dry Bulb Temperature db_temp (C) and
+Relative Humidity rh (%).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">[1] J. Sullivan and L. D. Sanders. “Method for obtaining wet-bulb temperatures by
+modifying the psychrometric formula.” Center for Experiment Design and Data
+Analysis. NOAA - National Oceanic and Atmospheric Administration.
+<a class="reference external" href="http://www.srh.noaa.gov/epz/?n=wxcalc_rh">http://www.srh.noaa.gov/epz/?n=wxcalc_rh</a></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug.psychrometrics.dew_point_from_db_wb">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">dew_point_from_db_wb</code><span class="sig-paren">(</span><em>db_temp</em>, <em>wet_bulb</em>, <em>b_press=101325</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#dew_point_from_db_wb"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.dew_point_from_db_wb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dew Point Temperature (C) at Temperature db_temp (C), wet_bulb (C)
+and Pressure b_press (Pa).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug.psychrometrics.enthalpy_from_db_hr">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">enthalpy_from_db_hr</code><span class="sig-paren">(</span><em>db_temp</em>, <em>humid_ratio</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#enthalpy_from_db_hr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.enthalpy_from_db_hr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enthalpy (kJ/kg) at humid_ratio (kg water/kg air) and at db_temp (C).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">[1] Vaisala. (2013) Humidity Conversion Formulas:
+Calculation Formulas for Humidity.
+www.vaisala.com/Vaisala%20Documents/Application%20notes/Humidity_Conversion_Formulas_B210973EN-F.pdf</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug.psychrometrics.humid_ratio_from_db_rh">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">humid_ratio_from_db_rh</code><span class="sig-paren">(</span><em>db_temp</em>, <em>rel_humid</em>, <em>b_press=101325</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#humid_ratio_from_db_rh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.humid_ratio_from_db_rh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Humidity Ratio (kg water/kg air) at a db_temp (C),
+rel_humid (%) and Pressure b_press (Pa).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">[1] Vaisala. (2013) Humidity Conversion Formulas:
+Calculation Formulas for Humidity.
+www.vaisala.com/Vaisala%20Documents/Application%20notes/Humidity_Conversion_Formulas_B210973EN-F.pdf</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug.psychrometrics.rel_humid_from_db_dpt">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">rel_humid_from_db_dpt</code><span class="sig-paren">(</span><em>db_temp</em>, <em>dew_pt</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#rel_humid_from_db_dpt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.rel_humid_from_db_dpt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relative Humidity (%) at db_temp (C), and dew_pt (C).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug.psychrometrics.rel_humid_from_db_enth">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">rel_humid_from_db_enth</code><span class="sig-paren">(</span><em>db_temp</em>, <em>enthalpy</em>, <em>b_press=101325</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#rel_humid_from_db_enth"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.rel_humid_from_db_enth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relative Humidity (%) at db_temp (C), enthalpy (kJ/kg)
+and Pressure b_press (Pa).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug.psychrometrics.rel_humid_from_db_hr">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">rel_humid_from_db_hr</code><span class="sig-paren">(</span><em>db_temp</em>, <em>humid_ratio</em>, <em>b_press=101325</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#rel_humid_from_db_hr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.rel_humid_from_db_hr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relative Humidity (%) at humid_ratio (kg water/kg air), db_temp (C),
+and Pressure b_press (Pa).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug.psychrometrics.rel_humid_from_db_wb">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">rel_humid_from_db_wb</code><span class="sig-paren">(</span><em>db_temp</em>, <em>wet_bulb</em>, <em>b_press=101325</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#rel_humid_from_db_wb"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.rel_humid_from_db_wb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relative Humidity (%) at db_temp(C), wet_bulb (C), and Pressure b_press (Pa).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug.psychrometrics.saturated_vapor_pressure">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">saturated_vapor_pressure</code><span class="sig-paren">(</span><em>t_kelvin</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#saturated_vapor_pressure"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.saturated_vapor_pressure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saturated Vapor Pressure (Pa) at t_kelvin (K).</p>
+<p>This function accounts for the different behaviour above vs. below
+the freezing point of water.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>[1] W. Wagner and A. Pru:” The IAPWS Formulation 1995 for the Thermodynamic
+Properties of Ordinary Water Substance for General and Scientific Use “,
+Journal of Physical and Chemical Reference Data,
+June 2002 ,Volume 31, Issue 2, pp. 387535</p>
+<p class="last">[2] Vaisala. (2013) Humidity Conversion Formulas:
+Calculation Formulas for Humidity.
+www.vaisala.com/Vaisala%20Documents/Application%20notes/Humidity_Conversion_Formulas_B210973EN-F.pdf</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug.psychrometrics.wet_bulb_from_db_rh">
+<code class="descclassname">ladybug.psychrometrics.</code><code class="descname">wet_bulb_from_db_rh</code><span class="sig-paren">(</span><em>db_temp</em>, <em>rh</em>, <em>b_press=101325</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug/psychrometrics.html#wet_bulb_from_db_rh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug.psychrometrics.wet_bulb_from_db_rh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wet Bulb Temperature (C) at db_temp (C),
+Relative Humidity rh (%), and Pressure b_press (Pa).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">[1] J. Sullivan and L. D. Sanders. “Method for obtaining wet-bulb temperatures by
+modifying the psychrometric formula.” Center for Experiment Design and Data
+Analysis. NOAA - National Oceanic and Atmospheric Administration.
+<a class="reference external" href="http://www.srh.noaa.gov/epz/?n=wxcalc_rh">http://www.srh.noaa.gov/epz/?n=wxcalc_rh</a></p>
+</div>
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2019, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
